@@ -20,3 +20,13 @@ window.onload = function(){
         count.innerHTML = score;
     }
 }
+img.addEventListener("touchstart", function(){
+        increaseScore();
+        img.src = 'sabri2.png';
+        audio.play();
+    });
+
+    img.addEventListener("touchmove", function(){
+        img.src = 'sabri1.png';
+        audio.play();
+    });
